@@ -10,7 +10,8 @@
 <body class="bg-gray-50 flex flex-col items-center justify-center min-h-screen p-6">
   
   <!-- Logo -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Tandia_logo.svg" alt="Tandia" class="w-32 mb-4">
+  <img src="img/tandia-logo-blue.svg" alt="Tandia" class="w-60 mb-4">
+
 
   <!-- Título -->
   <h1 class="text-xl font-bold text-gray-800 text-center">Facturación Electrónica Automática</h1>
@@ -19,9 +20,9 @@
   <!-- Sección principal -->
   <div class="w-full max-w-md space-y-4">
 
-    <div class="bg-white shadow rounded-xl p-4 border">
+    <div class="bg-white shadow rounded-xl p-4 border border-blue-500">
       <h2 class="font-semibold text-gray-800">Tandia Web</h2>
-      <p class="text-gray-500 text-sm">Plataforma accesible desde cualquier navegador. Ideal para empresas que necesitan facturar desde múltiples dispositivos.</p>
+      <p class="text-gray-500 text-sm">Plataforma completa accesible desde cualquier navegador. Ideal para empresas que necesitan facturar desde múltiples dispositivos.</p>
     </div>
 
     <div class="bg-white shadow rounded-xl p-4 border">
@@ -31,31 +32,87 @@
 
     <!-- Métricas -->
     <div class="grid grid-cols-3 gap-3 text-center mt-6">
-      <div>
+      <div class="bg-white border border-[#D9D9D9] rounded-xl p-2 shadow-sm flex flex-col items-center">
+        <img src="img\personas.png" alt="Empresas" class="w-10 h-10 mb-1">
         <p class="text-blue-600 font-bold text-lg">+1000</p>
         <p class="text-gray-600 text-sm">Empresas</p>
       </div>
-      <div>
+      <div class="bg-white border border-[#D9D9D9] rounded-xl p-2 shadow-sm flex flex-col items-center">
+        <img src="img\mercado.png" alt="Empresas" class="w-10 h-10 mb-1">
         <p class="text-blue-600 font-bold text-lg">+5</p>
         <p class="text-gray-600 text-sm">Años</p>
       </div>
-      <div>
+      <div class="bg-white border border-[#D9D9D9] rounded-xl p-2 shadow-sm flex flex-col items-center">
+        <img src="img\centro-de-llamadas.png" alt="Empresas" class="w-10 h-10 mb-1">
         <p class="text-blue-600 font-bold text-lg">Soporte</p>
         <p class="text-gray-600 text-sm">Dedicado</p>
       </div>
     </div>
 
     <!-- Botones -->
+  <h3 class="text-center text-black-700 font-medium mb-4 font-semibold">VISITA NUESTRA WEB</h3>
     <div class="mt-6 space-y-3">
-      <a href="#" class="block text-center bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition" onclick="trackClick('Tandia Web')">🌐 Tandia</a>
-      <a href="#" class="block text-center bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition" onclick="trackClick('Tandia API')">💻 Tandia API</a>
+    <a href="https://tandiashop.com/" 
+     class="flex items-center justify-between bg-blue-600 text-white py-3 px-4 rounded-xl hover:bg-blue-700 transition shadow-sm"
+     onclick="trackClick('Tandia Web')">
+    <!-- Izquierda: imagen -->
+    <div class="flex items-center space-x-3">
+      <img src="img\sitio-web.png" alt="Tandia Web" class="w-8 h-8">
+      <!-- Texto -->
+      <div class="text-left">
+        <p class="font-semibold text-base">Tandia Web</p>
+        <p class="text-sm text-blue-100">Accede desde tu navegador</p>
+      </div>
+    </div>
+    <!-- Derecha: flecha -->
+    <span class="text-blue-100 text-lg">➜</span>
+    </a>
+
+  <!-- Botón 2 -->
+  <a href="https://tandiashop.com/api-facturacion-electronica/" 
+     class="flex items-center justify-between bg-blue-600 text-white py-3 px-4 rounded-xl hover:bg-blue-700 transition shadow-sm"
+     onclick="trackClick('Tandia API')">
+    
+    <!-- Izquierda: imagen -->
+    <div class="flex items-center space-x-3">
+      <img src="img\codigo.png" alt="Tandia API" class="w-8 h-8">
+      
+      <!-- Texto -->
+      <div class="text-left">
+        <p class="font-semibold text-base">Tandia API</p>
+        <p class="text-sm text-blue-100">Integra con tus sistemas</p>
+      </div>
+    </div>
+
+    <!-- Derecha: flecha -->
+    <span class="text-blue-100 text-lg">➜</span>
+  </a>
     </div>
 
     <!-- Contactos -->
+    <h3 class="text-center text-black-700 font-medium mb-4 font-semibold">CONTACTOS</h3>
     <div class="mt-6 space-y-3">
-      <a href="#" class="block text-center bg-green-500 text-white font-semibold py-3 rounded-xl hover:bg-green-600 transition" onclick="trackClick('Ventas')">¡Pregunta por nuestro sistema de ventas!</a>
-      <a href="#" class="block text-center bg-green-500 text-white font-semibold py-3 rounded-xl hover:bg-green-600 transition" onclick="trackClick('API')">¡Pregunta por nuestra API!</a>
-      <a href="#" class="block text-center border border-blue-400 text-blue-600 font-semibold py-3 rounded-xl hover:bg-blue-50 transition" onclick="trackClick('Canal Difusión')">🔔 Canal de Difusión</a>
+      <!-- Botón 1 -->
+  <a href="#" 
+     class="flex items-center bg-green-500 text-white font-semibold py-3 px-4 rounded-xl hover:bg-green-600 transition shadow-sm"
+     onclick="trackClick('Ventas')">
+    <img src="img\whatsapp.png" alt="Ventas" class="w-7 h-7 mr-3">
+    <span>¡Pregunta por nuestro sistema de ventas!</span>
+  </a>
+  <!-- Botón 2 -->
+  <a href="#" 
+     class="flex items-center bg-green-500 text-white font-semibold py-3 px-4 rounded-xl hover:bg-green-600 transition shadow-sm"
+     onclick="trackClick('API')">
+    <img src="img\whatsapp.png" alt="API" class="w-7 h-7 mr-3">
+    <span>¡Pregunta por nuestra API!</span>
+  </a>
+  <!-- Botón 3 -->
+  <a href="#" 
+     class="flex items-center border border-blue-400 text-blue-600 font-semibold py-3 px-4 rounded-xl hover:bg-blue-50 transition shadow-sm"
+     onclick="trackClick('Canal Difusión')">
+    <img src="img\notificacion.png" alt="Canal de Difusión" class="w-7 h-7 mr-3">
+    <span>🔔 Canal de Difusión</span>
+  </a>
     </div>
 
   </div>
